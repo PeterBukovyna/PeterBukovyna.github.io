@@ -5,21 +5,23 @@
   <title>Приклад ЗМІСТУ</title>
   <style>
     /* Кнопка повернення */
-  <style>
-.back-to-toc {
-  display: inline-block;
-  background-color: #007BFF; /* синій */
-  color: white;
-  text-decoration: none;
-  padding: 12px 24px;
-  border-radius: 8px;
-  font-size: 1.1em;
-  font-weight: bold;
-  margin-top: 20px;
-}
-.back-to-toc:hover {
-  background-color: #0056b3; /* темніший синій при наведенні */
-}
+    .back-to-toc {
+      display: block;               /* тепер займає всю ширину контейнера */
+      max-width: 300px;             /* обмежуємо ширину */
+      background-color: #007BFF;    /* синій */
+      color: white;
+      text-decoration: none;
+      padding: 12px 24px;
+      border-radius: 8px;
+      font-size: 1.1em;
+      font-weight: bold;
+      margin: 20px auto;            /* центрування по горизонталі */
+      text-align: center;           /* центрування тексту */
+    }
+
+    .back-to-toc:hover {
+      background-color: #0056b3;    /* темніший синій при наведенні */
+    }
 
     /* ЗМІСТ */
     #toc {
@@ -49,7 +51,8 @@
   </div>
 
 </body>
-	
+</html>
+
 <h2>ЗМІСТ</h2>
 <ol id="toc">
   <li><a href="#section1">Професійна діяльність</a></li>
@@ -616,6 +619,7 @@ IBM PC робочих місць читачів. Центральний серв
   <a href="#toc">⬆ Повернутись до ЗМІСТУ</a>
 </div>
 	
+
 
 
 
