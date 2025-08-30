@@ -4,45 +4,78 @@
   <meta charset="UTF-8">
   <title>Приклад ЗМІСТУ</title>
   <style>
-    /* Кнопка повернення */
-    .back-to-toc {
-      display: block;               /* тепер займає всю ширину контейнера */
-      max-width: 300px;             /* обмежуємо ширину */
-      background-color: #007BFF;    /* синій */
-      color: white;
-      text-decoration: none;
-      padding: 12px 24px;
-      border-radius: 8px;
-      font-size: 1.1em;
-      font-weight: bold;
-      margin: 20px auto;            /* центрування по горизонталі */
-      text-align: center;           /* центрування тексту */
+  /* Кнопка повернення */
+  .back-to-toc {
+    display: block;
+    max-width: 300px;
+    background-color: #007BFF;
+    color: white;
+    text-decoration: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 1.1em;
+    font-weight: bold;
+    margin: 20px auto;
+    text-align: center;
+  }
+
+  .back-to-toc:hover {
+    background-color: #0056b3;
+  }
+
+  /* Фото */
+  img {
+    max-width: 100%;    /* підлаштовуються під ширину сторінки */
+    height: auto;
+    display: block;
+    margin: 10px auto;  /* центрування */
+  }
+
+  /* Текст */
+  body {
+    margin: 0;
+    padding: 10px;
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+    text-align: justify;
+  }
+
+  /* ЗМІСТ */
+  #toc {
+    background: #f0f0f0;
+    padding: 15px;
+    border-radius: 8px;
+    width: fit-content;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  #toc ol {
+    list-style: decimal;
+    margin-left: 20px;
+    padding-left: 10px;
+  }
+
+  #toc ol ol {
+    list-style: disc;
+    margin-left: 25px;
+  }
+
+  /* Для мобільних екранів */
+  @media (max-width: 768px) {
+    body {
+      padding: 8px;
+      font-size: 1em;
+      text-align: left;   /* щоб не було вузькою колонкою */
     }
 
-    .back-to-toc:hover {
-      background-color: #0056b3;    /* темніший синій при наведенні */
-    }
-
-    /* ЗМІСТ */
     #toc {
-      background: #f0f0f0;
-      padding: 15px;
-      border-radius: 8px;
-      width: fit-content;
-      margin: 0 auto;     /* центрування блоку */
+      width: 100%;
+      max-width: none;
     }
+  }
+</style>
 
-    #toc ol {
-      list-style: decimal;   /* головні пункти: 1, 2, 3 */
-      margin-left: 20px;
-      padding-left: 10px;
-    }
-
-    #toc ol ol {
-      list-style: disc;   /* підпункти — кружечки */
-      margin-left: 25px;
-    }
-  </style>
 </head>
 <body>
 
@@ -616,6 +649,7 @@ IBM PC робочих місць читачів. Центральний серв
   <a href="#toc" class="back-to-toc">⬅ Повернутись у ЗМІСТ</a>
 </div>
 	
+
 
 
 
